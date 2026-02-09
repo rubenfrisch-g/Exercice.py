@@ -24,4 +24,3 @@ print("apple".find("l"))
 if int(("xylophne".find("y"))) > 0 :
     print("YEAHHHH y is in the word ")
 print("my_string".islower())
-print('angry')
