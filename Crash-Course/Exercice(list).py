@@ -17,5 +17,6 @@ vowels = ['a','e','i','o','u','y']
 print([con for con in 'amazing' if con not in vowels])
 list_ex10 = [0,1,2]
 print([list_ex10]*3)
-last_list = range(1,9)
-print(for last in last_list)
+full_list = [[out for out in range(10)] for out in range(10)]
+print (full_list)
+
