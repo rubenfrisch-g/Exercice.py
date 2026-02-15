@@ -1,5 +1,3 @@
-import random
-
 # 1. Ask for user input
 user_string = input("Enter a string of exactly 10 characters: ")
 
@@ -18,4 +16,3 @@ else:
     # 4. Build the string character by character
     for i in range(1, len(user_string) + 1):
         print(user_string[:i])
-    
