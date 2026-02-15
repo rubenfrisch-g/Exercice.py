@@ -19,8 +19,3 @@ else:
     for i in range(1, len(user_string) + 1):
         print(user_string[:i])
     
-    # 5. Bonus: Jumble the string
-    chars = list(user_string)
-    random.shuffle(chars)
-    jumbled = "".join(chars)
-    print("Jumbled string:", jumbled)

@@ -11,7 +11,7 @@ print((99^3)*8)
 print(5 < 3)  # False
 print(3 == 3) #True
 print(3 == "3") #False
-# print("3" > 3) #False
+print("3" > 3) #False
 print( "Hello" == "hello") #False
 
 # Exercie 4
@@ -38,21 +38,21 @@ if a > b:
 
 # Exercie 7
 
-# Number = int(input("Choose a number : "))
+Number = int(input("Choose a number : "))
 
-# if Number % 2 == 0:
-#     print("You have chosen an even number")
-# else:
-#     print("You have chosen an ode number")
+if Number % 2 == 0:
+    print("You have chosen an even number")
+else:
+    print("You have chosen an ode number")
 
 # Exercie 8
 
-# your_name = input("What is your name ?")
+your_name = input("What is your name ?")
 
-# if your_name == "Ruben":
-#     print("HOPAAAA You have the best name in the word.")
-# else:
-#     print(f"HOPAAA {your_name}, what a beautiful name, unfortunately not the same as mine.")
+if your_name == "Ruben":
+    print("HOPAAAA You have the best name in the word.")
+else:
+    print(f"HOPAAA {your_name}, what a beautiful name, unfortunately not the same as mine.")
 
 # Exercie 9
 
@@ -62,6 +62,8 @@ if height > 145:
     print("Let's have fun, you are tall enough")
 else:
     print("BAAAAAD, you're too small. Maybe next year ...")
+
+
 
 
 
