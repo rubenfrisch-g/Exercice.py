@@ -20,7 +20,7 @@ print(our_fav_numbers)
 
 numbers = (1, 2, 3)
 
-# numbers.append(4) # Try to add a number will produce an error 
+numbers.append(4) # Try to add a number will produce an error 
 
 # Exercie 3
 
@@ -63,45 +63,45 @@ for index in range(21):
 
 # Exercie 6
 
-# name = input("Hey boss, what is your name? ")
+name = input("Hey boss, what is your name? ")
 
-# while True:
-#     if len(name) < 3 or name.isdigit():
-#         name = input("Give a correct name: ")
-#         continue
+while True:
+    if len(name) < 3 or name.isdigit():
+        name = input("Give a correct name: ")
+        continue
 
-#     print("Thank you")
-#     break
+    print("Thank you")
+    break
 
 # Exercie 7
 
-# fav_fruit = input("Enter your favorite fruits separated by spaces: ")
-# fav_fruit_list = fav_fruit.split()
+fav_fruit = input("Enter your favorite fruits separated by spaces: ")
+fav_fruit_list = fav_fruit.split()
 
-# other_fruit = input("Give me another fruit")
+other_fruit = input("Give me another fruit")
 
-# if other_fruit in fav_fruit_list:
-#     print("You chose one of your favorite fruits! Enjoy!")
-# else:
-#     print("You chose a new fruit. I hope you enjoy it!")
+if other_fruit in fav_fruit_list:
+    print("You chose one of your favorite fruits! Enjoy!")
+else:
+    print("You chose a new fruit. I hope you enjoy it!")
     
 # Exercie 8
 
-# list_of_toppings = []
+list_of_toppings = []
 
-# while True:
-#     toppings = input("Enter a topping (type 'quit' to finish): ")
+while True:
+    toppings = input("Enter a topping (type 'quit' to finish): ")
 
-#     if toppings == "quit":
-#         print(f"Adding {list_of_toppings} to your pizza")
-#         break
-#     else:
-#         list_of_toppings.append(toppings)
+    if toppings == "quit":
+        print(f"Adding {list_of_toppings} to your pizza")
+        break
+    else:
+        list_of_toppings.append(toppings)
 
-# number_of_toppings = len(list_of_toppings)
-# pizza_price = number_of_toppings * 2,5 + 10
+number_of_toppings = len(list_of_toppings)
+pizza_price = number_of_toppings * 2,5 + 10
 
-# print(f"The price of your pizza with all the toppings is {pizza_price}$")
+print(f"The price of your pizza with all the toppings is {pizza_price}$")
 
 # Exercie 9
 
@@ -125,4 +125,3 @@ while True:
     total_cost += cost
 
 print(f"Total ticket cost: {total_cost}$" )
-    
