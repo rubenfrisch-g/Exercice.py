@@ -9,33 +9,33 @@ print(result)
 
 # Exercie 2
 
-# family = {}
-# total_price = 0
+family = {}
+total_price = 0
 
-# while True:
-#     name = input("Enter a family member's name (or type 'quit'): ")
+while True:
+    name = input("Enter a family member's name (or type 'quit'): ")
     
-#     if name == "quit":
-#         break
+    if name == "quit":
+        break
     
-#     age = int(input(f"Enter {name}'s age: "))
-#     family[name] = age
+    age = int(input(f"Enter {name}'s age: "))
+    family[name] = age
 
-# price_list = {}
+price_list = {}
 
-# for x,y in family.items():
-#     if y < 3:
-#        price = 0
-#     elif 3 <= y <= 12:
-#         price = 10
-#     else:
-#         price = 15 
+for x,y in family.items():
+    if y < 3:
+       price = 0
+    elif 3 <= y <= 12:
+        price = 10
+    else:
+        price = 15 
 
-#     price_list[x] = price
-#     total_price += price
+    price_list[x] = price
+    total_price += price
 
-# print(price_list)
-# print(total_price)
+print(price_list)
+print(total_price)
 
 # Exercie 3
 
