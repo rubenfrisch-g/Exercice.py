@@ -1,15 +1,15 @@
 # Challenge 1
 
-# word = input("Enter a word: ")
-# result = {}
+word = input("Enter a word: ")
+result = {}
 
-# for index, letter in enumerate(word):
-#     if letter in result:
-#         result[letter].append(index)
-#     else:
-#         result[letter] = [index]
+for index, letter in enumerate(word):
+    if letter in result:
+        result[letter].append(index)
+    else:
+        result[letter] = [index]
 
-# print(result)
+print(result)
 
 # Challenge 2
 
