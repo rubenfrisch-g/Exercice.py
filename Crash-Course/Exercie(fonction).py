@@ -253,3 +253,82 @@ add = once(add)
 print(add(2,2))
 print(add(2,20)) 
 print(add(12,20))
+
+
+# Exercice 2
+
+def solution(string):
+    return string[::-1]
+
+
+
+
+import math
+
+def new_avg(arr, newavg):
+    n = len(arr) + 1
+    required_total = newavg * n
+    needed = required_total - sum(arr)
+    
+    if needed <= 0:
+        raise ValueError("Expected New Average is too low")
+    
+    return math.ceil(needed)
+
+
+def sequence_sum(begin, end, step):
+    if begin > end:
+        return 0
+    return sum(range(begin, end + 1, step))
+
+
+def max_diff(lst):
+    if not lst:
+        return 0
+    return max(lst) - min(lst)
+
+
+def count_smileys(arr):
+    eyes = [":", ";"]
+    noses = ["-", "~"]
+    mouths = [")", "D"]
+    
+    count = 0
+    
+    for face in arr:
+        if len(face) == 2:
+            if face[0] in eyes and face[1] in mouths:
+                count += 1
+        elif len(face) == 3:
+            if face[0] in eyes and face[1] in noses and face[2] in mouths:
+                count += 1
+                
+    return count
+
+
+
+def count_sentences(text):
+    return text.count(".") + text.count("!") + text.count("?")
+
+
+def race(v1, v2, g):
+    if v1 >= v2:
+        return None
+    
+    time = g * 3600 / (v2 - v1)
+    
+    hours = int(time // 3600)
+    minutes = int((time % 3600) // 60)
+    seconds = int(time % 60)
+    
+    return [hours, minutes, seconds]
+
+
+def shifted_diff(first, second):
+    if len(first) != len(second):
+        return -1
+    
+    for i in range(len(first)):
+        if first[i:] + first[:i] == second:
+            return i
+    return -1
