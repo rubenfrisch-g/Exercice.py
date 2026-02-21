@@ -64,7 +64,7 @@ def players_turn():
 
         if check_win(board, current_player):
             display_board()
-            print(f"🎉 Player {current_player} wins!")
+            print(f" Player {current_player} wins!")
             break
 
         if board_full():
